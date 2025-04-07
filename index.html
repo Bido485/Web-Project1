@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Car Rental - Your Journey Starts Here</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Central Car Rental</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn">Sign In</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Journey Starts Here</h1>
+                <p>Find the perfect car for your next adventure with Central Car Rental</p>
+                <div class="search-form">
+                    <form id="rentalForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickup-location">Pickup Location</label>
+                                <select id="pickup-location" required>
+                                    <option value="">Select location</option>
+                                    <option value="airport">Central Airport</option>
+                                    <option value="downtown">Downtown Central</option>
+                                    <option value="north">North Central</option>
+                                    <option value="south">South Central</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dropoff-location">Drop-off Location</label>
+                                <select id="dropoff-location" required>
+                                    <option value="">Same as pickup</option>
+                                    <option value="airport">Central Airport</option>
+                                    <option value="downtown">Downtown Central</option>
+                                    <option value="north">North Central</option>
+                                    <option value="south">South Central</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickup-date">Pickup Date</label>
+                                <input type="date" id="pickup-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dropoff-date">Drop-off Date</label>
+                                <input type="date" id="dropoff-date" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Search Cars</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="container">
+        <h2 class="section-title">Our Fleet</h2>
+        <div class="cars-grid" id="carsContainer">
+            <!-- Cars will be loaded here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="container">
+        <h2 class="section-title">Why Choose Central Car Rental</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tag"></i>
+                </div>
+                <h3 class="feature-title">Best Prices</h3>
+                <p>We offer competitive prices with no hidden fees. Price match guarantee on all rentals.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3 class="feature-title">Wide Selection</h3>
+                <p>Choose from our extensive fleet of vehicles to match your needs and budget.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="feature-title">24/7 Support</h3>
+                <p>Our customer service team is available around the clock to assist you.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">Fully Insured</h3>
+                <p>All our rentals come with comprehensive insurance coverage for your peace of mind.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Central Car Rental made my business trip so much easier. The car was clean, fuel-efficient, and the pickup process was seamless."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D." class="author-img">
+                        <div>
+                            <div class="author-name">John D.</div>
+                            <div>Business Traveler</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I've rented from Central several times for family vacations. Their prices are fair and the vehicles are always in excellent condition."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M." class="author-img">
+                        <div>
+                            <div class="author-name">Sarah M.</div>
+                            <div>Family Vacationer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The customer service is outstanding! When I had a flat tire, they had roadside assistance to me within 30 minutes. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael T." class="author-img">
+                        <div>
+                            <div class="author-name">Michael T.</div>
+                            <div>Adventure Seeker</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Central Car Rental</h3>
+                    <p>Your trusted partner for car rentals across the country. Quality service since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Rentals</a></li>
+                        <li><a href="#">Long Term Rentals</a></li>
+                        <li><a href="#">One Way Rentals</a></li>
+                        <li><a href="#">Airport Rentals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Central Ave, Downtown</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@centralcarrental.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Central Car Rental. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cars-data.js"></script>
+</body>
+</html>
